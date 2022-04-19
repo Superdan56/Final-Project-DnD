@@ -13,11 +13,18 @@ public class Draging : MonoBehaviour {
         isDragging = false;    
     }
 
-    
     void Update() {
         if (isDragging) {
             transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             transform.SetParent(Canvas.transform, true);
         }
+    }
+
+    public void StartDrag() {
+        isDragging = true;
+    }
+
+    public void EndDrag() {
+        isDragging = false;
     }
 }

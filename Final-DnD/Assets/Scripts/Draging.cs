@@ -7,7 +7,6 @@ public class Draging : MonoBehaviour {
 
     public GameObject Canvas;
     public GameObject DropZone;
-    public Text
 
     private bool isDragging;
     private bool isOverDropZone;

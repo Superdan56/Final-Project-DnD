@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Draging : MonoBehaviour {
 
     public GameObject Canvas;
     public GameObject DropZone;
+    public Text
 
     private bool isDragging;
     private bool isOverDropZone;
 
     private Vector2 startPosition;
+
+
     
 
     void Start() {

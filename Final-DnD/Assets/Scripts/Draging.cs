@@ -5,12 +5,22 @@ using UnityEngine;
 public class Draging : MonoBehaviour {
 
     public GameObject Canvas;
+    public GameObject DropZone;
+
     private bool isDragging;
+    private bool isOverDropZone;
+
+    private Vector2 startPosition;
     
 
     void Start() {
         Canvas = GameObject.Find("Canvas");
-        isDragging = false;    
+        DropZone = GameObject.Find("DropZone");
+
+        isDragging = false;
+        isOverDropZone = false;
+
+        startPosition = transform.position;
     }
 
     void Update() {
@@ -20,11 +30,25 @@ public class Draging : MonoBehaviour {
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision) {
+
+    }
+
+    void OnCollisionExit2D () {
+        
+    }
+
     public void StartDrag() {
         isDragging = true;
     }
 
     public void EndDrag() {
         isDragging = false;
+        if (isOverDropZone) {
+
+        }
+        else {
+            transform.position = startPosition;
+        }
     }
 }

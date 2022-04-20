@@ -670,7 +670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1150095943}
   - component: {fileID: 1150095944}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: DropZone
   m_TagString: Dropzone
   m_Icon: {fileID: 0}

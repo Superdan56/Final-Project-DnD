@@ -31,11 +31,13 @@ public class Draging : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-
+        if(collision.gameObject.tag == "Dropzone") {
+            isOverDropZone = true;
+        }
     }
 
-    void OnCollisionExit2D () {
-        
+    void OnCollisionExit2D(Collision2D collision) {
+        isOverDropZone = false;
     }
 
     public void StartDrag() {
@@ -45,7 +47,7 @@ public class Draging : MonoBehaviour {
     public void EndDrag() {
         isDragging = false;
         if (isOverDropZone) {
-
+            
         }
         else {
             transform.position = startPosition;

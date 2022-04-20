@@ -11,6 +11,7 @@ public class ContinueButton : MonoBehaviour {
     public GameObject Text2;
     public GameObject Text3;
     public GameObject backGround;
+    public GameObject nextPart;
 
     void Start() {
         TextCounter = 0;
@@ -18,6 +19,7 @@ public class ContinueButton : MonoBehaviour {
         Text1.SetActive(true);
         Text2.SetActive(false);
         Text3.SetActive(false);
+        nextPart.SetActive(false);
     }
 
     void Update() {
@@ -33,8 +35,10 @@ public class ContinueButton : MonoBehaviour {
         
         else if (TextCounter == 3) {
             Text3.SetActive(false);
-            gameObject.SetActive(false);
             backGround.SetActive(false);
+            nextPart.SetActive(true);
+            gameObject.SetActive(false);
+
         }
 
     }

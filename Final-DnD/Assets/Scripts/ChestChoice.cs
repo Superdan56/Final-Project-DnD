@@ -11,13 +11,15 @@ public class ChestChoice : MonoBehaviour {
     public GameObject RogueText;
     public GameObject FighterText;
     public GameObject Background;
-    public GameObject Continue;
+    public GameObject ContinueRogue;
+    public GameObject ContinueFighter;
 
     void Start() {
         RogueText.SetActive(false);
         FighterText.SetActive(false);
         Background.SetActive(false);
-        Continue.SetActive(false);
+        ContinueRogue.SetActive(false);
+        ContinueFighter.SetActive(false);
     }
 
     void Update() {
@@ -29,7 +31,7 @@ public class ChestChoice : MonoBehaviour {
         FighterButton.SetActive(false);
         Background.SetActive(true);
         RogueText.SetActive(true);
-        Continue.SetActive(true);
+        ContinueRogue.SetActive(true);
     }
 
     public void FighterPicked() {
@@ -37,7 +39,7 @@ public class ChestChoice : MonoBehaviour {
         FighterButton.SetActive(false);
         Background.SetActive(true);
         FighterText.SetActive(true);
-        Continue.SetActive(true);
+        ContinueFighter.SetActive(true);
     }
 
 }

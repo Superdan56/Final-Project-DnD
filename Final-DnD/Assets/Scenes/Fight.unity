@@ -1619,3 +1619,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 199651085b4359f47b2f05252ef166d7, type: 3}
+--- !u!1 &4037639377407519992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4037639377427605322, guid: 199651085b4359f47b2f05252ef166d7, type: 3}
+  m_PrefabInstance: {fileID: 4037639377407519991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4037639377407519993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5495719679372967601, guid: 199651085b4359f47b2f05252ef166d7, type: 3}
+  m_PrefabInstance: {fileID: 4037639377407519991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4037639377407519994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7073124668797821260, guid: 199651085b4359f47b2f05252ef166d7, type: 3}
+  m_PrefabInstance: {fileID: 4037639377407519991}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4037639377407519995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4037639377407519992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3fcb050a0d9e94f87a6d429c201a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card1: {fileID: 4037639377407519994}
+  Card2: {fileID: 4037639377407519993}
+  Card3: {fileID: 0}
+  Card4: {fileID: 0}
+  Card5: {fileID: 0}
+  hand: {fileID: 0}

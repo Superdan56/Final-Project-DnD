@@ -12,7 +12,7 @@ public class CardDrawing : MonoBehaviour {
     public GameObject hand;
 
     // Start is called before the first frame update
-    void Start() {
+    void Awake() {
         for (int i = 0; i < 5; i++) {
             DrawCard();
         }

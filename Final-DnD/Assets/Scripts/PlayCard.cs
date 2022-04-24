@@ -14,6 +14,8 @@ public class PlayCard : MonoBehaviour {
     public Text enemy;
     public Text actions;
 
+    private int numActions;
+
     // Start is called before the first frame update
     void Start() {
         
@@ -21,6 +23,7 @@ public class PlayCard : MonoBehaviour {
 
     public void playcards() {
 
+        actions = "actions: " 
     }
 
 }

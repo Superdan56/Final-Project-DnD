@@ -7,6 +7,7 @@ public class Draging : MonoBehaviour {
 
     public GameObject Canvas;
     public GameObject DropZone;
+    public PlayCard PlayCard;
 
     private bool isDragging;
     private bool isOverDropZone;
@@ -19,11 +20,13 @@ public class Draging : MonoBehaviour {
     void Start() {
         Canvas = GameObject.Find("Canvas");
         DropZone = GameObject.Find("DropZone");
+        PlayCard = GetComponent<PlayCard>();
 
         isDragging = false;
         isOverDropZone = false;
 
         startPosition = transform.position;
+
     }
 
     void Update() {
@@ -50,7 +53,7 @@ public class Draging : MonoBehaviour {
     public void EndDrag() {
         isDragging = false;
         if (isOverDropZone) {
-            
+
         }
         else {
             transform.position = startPosition;

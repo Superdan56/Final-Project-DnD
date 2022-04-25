@@ -372,6 +372,7 @@
 "Assets/Scripts/ContinueButton.cs"
 "Assets/Scripts/DeckScript.cs"
 "Assets/Scripts/Draging.cs"
+"Assets/Scripts/EndButtonScript.cs"
 "Assets/Scripts/PlayCard.cs"
 "Assets/Scripts/StartUp.cs"
 -langversion:9.0

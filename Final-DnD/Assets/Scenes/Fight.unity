@@ -1000,9 +1000,10 @@ MonoBehaviour:
   Card2: {fileID: 0}
   Card3: {fileID: 0}
   Card4: {fileID: 0}
-  health: {fileID: 0}
-  enemy: {fileID: 0}
-  actions: {fileID: 0}
+  health: {fileID: 704196080}
+  enemy: {fileID: 1338356211}
+  actions: {fileID: 1999768619}
+  discard: {fileID: 262486041}
 --- !u!1 &1206199460
 GameObject:
   m_ObjectHideFlags: 0

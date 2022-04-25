@@ -18,12 +18,12 @@ public class PlayCard : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        
+        numActions = 3;
     }
 
     public void playcards() {
-
-        actions = "actions: " 
+        numActions -= 1;
+        actions.text = "actions: " + numActions;
     }
 
 }

@@ -7,12 +7,31 @@ public class DeckScript : MonoBehaviour {
 
     public GameObject deckText;
 
-    private string[] decklist;
+    private List<string> decklist = new List<string>();
     private int decksize;
 
     void Start() {
-        decklist = new string[] {"Strike", "Second Wind", "Action Surge", "Indominable", "Preperation", "Ambush", "Throwing Knives", "Cunning Action", "Heal", "Harm", "Revivy", "Commune", "Eldritch Blast", "Drain Life", "Dark Bargin", "Dark Ritual", "Lightning Bolt", "Firebolt", "Divination", "Arcane Recovery" };
-        decksize = decklist.Length;
+        decklist.Add("Strike");
+        decklist.Add("Second Wind");
+        decklist.Add("Action Surge");
+        decklist.Add("Indominable");
+        decklist.Add("Preperation");
+        decklist.Add("Ambush");
+        decklist.Add("Throwing Knives");
+        decklist.Add("Cunning Action");
+        decklist.Add("Heal");
+        decklist.Add("Harm");
+        decklist.Add("Revivy");
+        decklist.Add("Commune");
+        decklist.Add("Eldritch Blast");
+        decklist.Add("Drain Life");
+        decklist.Add("Dark Bargin");
+        decklist.Add("Dark Ritual");
+        decklist.Add("Lightning Bolt");
+        decklist.Add("Firebolt");
+        decklist.Add("Divination");
+        decklist.Add("Arcane Recovery");
+        decksize = decklist.Count;
         deckText.GetComponent<TMPro.TextMeshProUGUI>().text = "Deck: " + decksize.ToString();  
     }
 
@@ -20,8 +39,9 @@ public class DeckScript : MonoBehaviour {
         deckText.GetComponent<TMPro.TextMeshProUGUI>().text = "Deck: " + decksize.ToString();
     }
 
-    public void addCard() {
-
+    public void addCard(string input) {
+        decksize += 1;
+        decklist.Add(input);
     }
 
 }

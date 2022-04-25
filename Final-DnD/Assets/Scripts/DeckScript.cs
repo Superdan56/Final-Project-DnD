@@ -32,7 +32,9 @@ public class DeckScript : MonoBehaviour {
         decklist.Add("Divination");
         decklist.Add("Arcane Recovery");
         decksize = decklist.Count;
-        deckText.GetComponent<TMPro.TextMeshProUGUI>().text = "Deck: " + decksize.ToString();  
+        if (deckText != null) {
+            deckText.GetComponent<TMPro.TextMeshProUGUI>().text = "Deck: " + decksize.ToString();
+        }
     }
 
     public void UpdateDeckSize() {

@@ -20,7 +20,7 @@ public class Draging : MonoBehaviour {
     void Start() {
         Canvas = GameObject.Find("Canvas");
         DropZone = GameObject.Find("DropZone");
-        playCard = GetComponent<PlayCard>();
+        playCard = DropZone.GetComponent<PlayCard>();
 
         isDragging = false;
         isOverDropZone = false;

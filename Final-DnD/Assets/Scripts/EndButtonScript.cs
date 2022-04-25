@@ -20,5 +20,6 @@ public class EndButtonScript : MonoBehaviour {
     // Update is called once per frame
     public void ButtonClicked() {
         deckscript.addCard(CardName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

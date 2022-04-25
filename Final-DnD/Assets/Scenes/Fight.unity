@@ -1611,7 +1611,7 @@ PrefabInstance:
     - target: {fileID: 769551088665814694, guid: 199651085b4359f47b2f05252ef166d7, type: 3}
       propertyPath: deckText
       value: 
-      objectReference: {fileID: 262486041}
+      objectReference: {fileID: 67598812}
     - target: {fileID: 4037639377427605321, guid: 199651085b4359f47b2f05252ef166d7, type: 3}
       propertyPath: m_RootOrder
       value: 1

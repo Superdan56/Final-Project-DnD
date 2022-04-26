@@ -375,6 +375,7 @@
 "Assets/Scripts/EndButtonScript.cs"
 "Assets/Scripts/PlayCard.cs"
 "Assets/Scripts/StartUp.cs"
+"Assets/Scripts/StrikeCardScript.cs"
 -langversion:9.0
 
 /deterministic

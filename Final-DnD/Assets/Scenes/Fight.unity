@@ -914,12 +914,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c3fcb050a0d9e94f87a6d429c201a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Card1: {fileID: 4037639377407519994}
-  Card2: {fileID: 0}
-  Card3: {fileID: 0}
-  Card4: {fileID: 0}
-  Card5: {fileID: 0}
+  deck: {fileID: 1889114380}
+  deckscript: {fileID: 0}
+  deckText: {fileID: 67598812}
   hand: {fileID: 969811428}
+  Card1: {fileID: 4037639377407519994}
 --- !u!1 &1150095942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,6 +1390,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1889114380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4037639377427605322, guid: 199651085b4359f47b2f05252ef166d7, type: 3}
+  m_PrefabInstance: {fileID: 4037639377407519991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1999768619
 GameObject:
   m_ObjectHideFlags: 0

@@ -51,6 +51,7 @@ public class Draging : MonoBehaviour {
         isDragging = false;
         if (isOverDropZone) {
             playCard.playcards();
+            gameObject.SetActive(false);
         }
         else {
             transform.position = startPosition;

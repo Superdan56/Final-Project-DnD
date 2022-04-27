@@ -97,7 +97,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 2354537180889062270}
           m_TargetAssemblyTypeName: Draging, Assembly-CSharp
           m_MethodName: StartDrag
           m_Mode: 1
@@ -113,7 +113,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 2354537180889062270}
           m_TargetAssemblyTypeName: Draging, Assembly-CSharp
           m_MethodName: EndDrag
           m_Mode: 1

@@ -8,7 +8,7 @@ public class CardDrawing : MonoBehaviour {
     public DeckScript deckscript;
     public GameObject deckText;
     public GameObject hand;
-    public GameObject Card1;
+    public GameObject cardGen;
 
     private int decksize;
     
@@ -16,19 +16,28 @@ public class CardDrawing : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
 
+        deck = GameObject.Find("Deck");
+
         deckscript = deck.GetComponent<DeckScript>();
 
         decksize = deckscript.GetSize();
 
         deckText.GetComponent<TMPro.TextMeshProUGUI>().text = "Deck: " + decksize.ToString();
 
+    }
+
+    public void DrawHand() {
         for (int i = 0; i < 5; i++) {
             DrawCard();
         }
     }
 
     void DrawCard() {
-        GameObject card = Instantiate(Card1, new Vector2(0,0), Quaternion.identity);
+        decksize -= 1;
+        deckText.GetComponent<TMPro.TextMeshProUGUI>().text = "Deck: " + decksize.ToString();
+
+        cardGen = GameObject.Find(deckscript.GenerateRandomCard());
+        GameObject card = Instantiate(cardGen, new Vector2(0,0), Quaternion.identity);
         card.transform.SetParent(hand.transform, false);
 
     }

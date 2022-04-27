@@ -5,11 +5,14 @@ using UnityEngine.UI;
 
 public class DeckScript : MonoBehaviour {
 
-    private List<string> decklist = new List<string>();
+    public List<string> decklist = new List<string>();
+    public List<string> CurrentDeck = new List<string>();
+
+    private string CurrentCard; 
     private int decksize;
 
     void Awake() {
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(this.gameObject);
     }
 
     void Start() {
@@ -35,15 +38,32 @@ public class DeckScript : MonoBehaviour {
         decklist.Add("Arcane Recovery");
         decksize = decklist.Count;
 
+        CurrentDeck = decklist;
+
+    }
+
+    void Update() {
+        decksize = decklist.Count;
     }
 
     public void addCard(string input) {
+        print(input);
         decksize += 1;
         decklist.Add(input);
     }
 
     public int GetSize() {
         return decksize;
+    }
+
+    public void ResetCurrentDeck() {
+        CurrentDeck = decklist;
+    }
+
+    public string GenerateRandomCard() {
+        CurrentCard = CurrentDeck[Random.Range(0, decksize)];
+        CurrentDeck.Remove(CurrentCard);
+        return CurrentCard;
     }
 
 }

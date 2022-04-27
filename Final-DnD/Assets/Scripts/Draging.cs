@@ -14,9 +14,6 @@ public class Draging : MonoBehaviour {
 
     private Vector2 startPosition;
 
-
-    
-
     void Start() {
         Canvas = GameObject.Find("Canvas");
         DropZone = GameObject.Find("DropZone");

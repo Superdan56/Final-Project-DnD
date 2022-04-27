@@ -22,7 +22,7 @@ public class DeckScript : MonoBehaviour {
         decklist.Add("Indominable");
         decklist.Add("Preperation");
         decklist.Add("Ambush");
-        decklist.Add("Throwing Knives");
+        decklist.Add("Throwing Knifes");
         decklist.Add("Cunning Action");
         decklist.Add("Heal");
         decklist.Add("Harm");
@@ -33,8 +33,8 @@ public class DeckScript : MonoBehaviour {
         decklist.Add("Dark Bargin");
         decklist.Add("Dark Ritual");
         decklist.Add("Lightning Bolt");
-        decklist.Add("Firebolt");
-        decklist.Add("Divination");
+        decklist.Add("Fireball");
+        decklist.Add("Divintion");
         decklist.Add("Arcane Recovery");
         decksize = decklist.Count;
 
@@ -61,7 +61,7 @@ public class DeckScript : MonoBehaviour {
     }
 
     public string GenerateRandomCard() {
-        CurrentCard = CurrentDeck[Random.Range(0, decksize)];
+        CurrentCard = CurrentDeck[Random.Range(0, CurrentDeck.Count)];
         CurrentDeck.Remove(CurrentCard);
         return CurrentCard;
     }

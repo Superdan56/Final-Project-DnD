@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4037639377427605321}
-  - component: {fileID: 769551088665814694}
   m_Layer: 0
   m_Name: Deck
   m_TagString: Untagged
@@ -54,19 +53,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &769551088665814694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4037639377427605322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6672fef5808fa4e4986fdd582a3e6817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deckText: {fileID: 0}
 --- !u!1001 &408151374442050626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -475,6 +461,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2568970928570669803, guid: 836fe0c0e3376724a986ce2eb730aa14, type: 3}
   m_PrefabInstance: {fileID: 1614347147092115645}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8484797215591907688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7180811698297831893, guid: 836fe0c0e3376724a986ce2eb730aa14, type: 3}
+  m_PrefabInstance: {fileID: 1614347147092115645}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1081788420884752355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8484797215591907688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12637e942a44924caf75644eae71fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 0}
+  DropZone: {fileID: 0}
+  playCard: {fileID: 0}
+--- !u!114 &688741810226767761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8484797215591907688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 13
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8169909111399629471}
+          m_TargetAssemblyTypeName: Draging, Assembly-CSharp
+          m_MethodName: StartDrag
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8169909111399629471}
+          m_TargetAssemblyTypeName: Draging, Assembly-CSharp
+          m_MethodName: EndDrag
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2063071415523580648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2209,6 +2260,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1808843144509320091, guid: 639182991b912ce4db4f169545476695, type: 3}
   m_PrefabInstance: {fileID: 8399991276558872456}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8169909111399629471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 428856275277196567, guid: 639182991b912ce4db4f169545476695, type: 3}
+  m_PrefabInstance: {fileID: 8399991276558872456}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12637e942a44924caf75644eae71fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8862114499500141365
 PrefabInstance:
   m_ObjectHideFlags: 0

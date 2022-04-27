@@ -16,7 +16,7 @@ public class CardDrawing : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
 
-        deck = GameObject.Find("Deck");
+        deck = GameObject.Find("DeckTracker");
 
         deckscript = deck.GetComponent<DeckScript>();
 

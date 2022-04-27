@@ -6,7 +6,7 @@ public class DeleteScript : MonoBehaviour
 {
 
     public void deleteSelf() {
-        Destroy(this);
+        gameObject.SetActive(false);
     }
 
 }

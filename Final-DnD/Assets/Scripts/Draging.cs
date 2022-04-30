@@ -9,20 +9,23 @@ public class Draging : MonoBehaviour {
     public GameObject DropZone;
     public PlayCard playCard;
 
+    public GameObject NoNoWindow;
+    public NoPlayScript NoNoScript;
+
     private bool isDragging;
     private bool isOverDropZone;
 
     private Vector2 startPosition;
+    private int actionCount;
 
     void Start() {
-        Canvas = GameObject.Find("Canvas");
-        DropZone = GameObject.Find("DropZone");
-        playCard = DropZone.GetComponent<PlayCard>();
 
         isDragging = false;
         isOverDropZone = false;
 
         startPosition = transform.position;
+
+        actionCount = 3;
 
     }
 
@@ -30,11 +33,9 @@ public class Draging : MonoBehaviour {
         Canvas = GameObject.Find("Canvas");
         DropZone = GameObject.Find("DropZone");
         playCard = DropZone.GetComponent<PlayCard>();
-
-        isDragging = false;
-        isOverDropZone = false;
-
-        startPosition = transform.position;
+        NoNoWindow = GameObject.Find("Can't Play");
+        NoNoScript = NoNoWindow.GetComponent<NoPlayScript>();
+        NoNoScript.WindowDisappear();
     }
 
     void Update() {
@@ -61,8 +62,15 @@ public class Draging : MonoBehaviour {
     public void EndDrag() {
         isDragging = false;
         if (isOverDropZone) {
-            playCard.playcards();
-            gameObject.SetActive(false);
+            if(actionCount < 1) {
+                NoNoScript.WindowAppear();
+                transform.position = startPosition;
+            }
+            else {
+                playCard.playcards();
+                gameObject.SetActive(false);
+                actionCount -= 1; 
+            }
         }
         else {
             transform.position = startPosition;

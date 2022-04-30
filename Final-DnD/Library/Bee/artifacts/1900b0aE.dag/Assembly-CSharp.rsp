@@ -376,6 +376,7 @@
 "Assets/Scripts/DeleteScript.cs"
 "Assets/Scripts/Draging.cs"
 "Assets/Scripts/EndButtonScript.cs"
+"Assets/Scripts/NoPlayScript.cs"
 "Assets/Scripts/PlayCard.cs"
 "Assets/Scripts/StartUp.cs"
 -langversion:9.0

@@ -9,6 +9,7 @@ public class CardDrawing : MonoBehaviour {
     public GameObject deckText;
     public GameObject hand;
     public GameObject cardGen;
+    public Draging dragScript; 
 
     private int decksize;
     
@@ -38,6 +39,8 @@ public class CardDrawing : MonoBehaviour {
 
         cardGen = GameObject.Find(deckscript.GenerateRandomCard());
         GameObject card = Instantiate(cardGen, new Vector2(0,0), Quaternion.identity);
+        dragScript = card.GetComponent<Draging>();
+        dragScript.RecallStart();
         card.transform.SetParent(hand.transform, false);
 
     }

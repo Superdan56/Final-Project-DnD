@@ -26,6 +26,17 @@ public class Draging : MonoBehaviour {
 
     }
 
+    public void RecallStart() {
+        Canvas = GameObject.Find("Canvas");
+        DropZone = GameObject.Find("DropZone");
+        playCard = DropZone.GetComponent<PlayCard>();
+
+        isDragging = false;
+        isOverDropZone = false;
+
+        startPosition = transform.position;
+    }
+
     void Update() {
         if (isDragging) {
             transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);

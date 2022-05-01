@@ -1235,10 +1235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d0710103310c874c858411164d9bdec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Card1: {fileID: 0}
-  Card2: {fileID: 0}
-  Card3: {fileID: 0}
-  Card4: {fileID: 0}
   health: {fileID: 704196080}
   enemy: {fileID: 1338356211}
   actions: {fileID: 1999768619}
@@ -1776,6 +1772,7 @@ GameObject:
   - component: {fileID: 1999768620}
   - component: {fileID: 1999768622}
   - component: {fileID: 1999768621}
+  - component: {fileID: 1999768623}
   m_Layer: 5
   m_Name: Actions
   m_TagString: Untagged
@@ -1823,7 +1820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Actions: 3'
+  m_text: 'Actions: txt'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1900,6 +1897,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999768619}
   m_CullTransparentMesh: 1
+--- !u!114 &1999768623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999768619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0fce6bbf6dbb7f4abf22df9ef29b895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Actions: 3
 --- !u!1 &2025268516
 GameObject:
   m_ObjectHideFlags: 0

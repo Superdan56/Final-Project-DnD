@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class NoPlayScript : MonoBehaviour {
 
-    public IEnumerator WindowAppear() {
-        transform.position = new Vector2(0,0);
-        yield return new WaitForSeconds(5);
-        transform.position = new Vector2(100,200);
+    public void Start() {
+        transform.position = new Vector2(10000,200000);
+    }
+
+    public void WindowAppear() {
+        transform.position = new Vector2(150,45);
+        
     }
 
     public void WindowDisappear() {
-        transform.position = new Vector2(100,200);
+        transform.position = new Vector2(10000,200000);
     }
 
 }

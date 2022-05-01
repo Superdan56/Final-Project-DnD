@@ -8,6 +8,8 @@ public class Draging : MonoBehaviour {
     public GameObject Canvas;
     public GameObject DropZone;
     public PlayCard playCard;
+    public GameObject actions;
+    public ActionTracker actionscript;
 
     public GameObject NoNoWindow;
     public NoPlayScript NoNoScript;
@@ -25,17 +27,19 @@ public class Draging : MonoBehaviour {
 
         startPosition = transform.position;
 
-        actionCount = 3;
-
     }
 
     public void RecallStart() {
         Canvas = GameObject.Find("Canvas");
+
         DropZone = GameObject.Find("DropZone");
         playCard = DropZone.GetComponent<PlayCard>();
+        
+        actions = GameObject.Find("Actions");
+        actionscript = actions.GetComponent<ActionTracker>();
+        
         NoNoWindow = GameObject.Find("Can't Play");
         NoNoScript = NoNoWindow.GetComponent<NoPlayScript>();
-        NoNoScript.WindowDisappear();
     }
 
     void Update() {
@@ -62,7 +66,7 @@ public class Draging : MonoBehaviour {
     public void EndDrag() {
         isDragging = false;
         if (isOverDropZone) {
-            if(actionCount < 1) {
+            if(actionscript.GetActions() < 1) {
                 NoNoScript.WindowAppear();
                 transform.position = startPosition;
             }

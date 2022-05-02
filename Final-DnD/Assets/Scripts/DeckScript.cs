@@ -19,14 +19,12 @@ public class DeckScript : MonoBehaviour {
         decklist.Add("Strike");
         decklist.Add("Second Wind");
         decklist.Add("Action Surge");
-        decklist.Add("Indominable");
         decklist.Add("Preperation");
         decklist.Add("Ambush");
         decklist.Add("Throwing Knifes");
         decklist.Add("Cunning Action");
         decklist.Add("Heal");
         decklist.Add("Harm");
-        decklist.Add("Revivy");
         decklist.Add("Commune");
         decklist.Add("Eldritch Blast");
         decklist.Add("Drain Life");
@@ -35,7 +33,6 @@ public class DeckScript : MonoBehaviour {
         decklist.Add("Lightning Bolt");
         decklist.Add("Fireball");
         decklist.Add("Divintion");
-        decklist.Add("Arcane Recovery");
         decksize = decklist.Count;
 
         CurrentDeck = decklist;

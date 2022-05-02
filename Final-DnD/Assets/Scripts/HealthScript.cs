@@ -6,18 +6,18 @@ public class HealthScript : MonoBehaviour
 {
     private int Hp;
 
-    public GameObject win;
+    public GameObject lose;
 
     void Start() {
         Hp = 20;
-        win.SetActive(false);
+        lose.SetActive(false);
     }
 
     // Update is called once per frame
     void Update() {
         gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "Health: " + Hp;
         if (Hp <= 0) {
-            win.SetActive(false);
+            lose.SetActive(false);
         }
     }
 

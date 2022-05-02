@@ -17,7 +17,7 @@ public class HealthScript : MonoBehaviour
     void Update() {
         gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "Health: " + Hp;
         if (Hp <= 0) {
-            lose.SetActive(false);
+            lose.SetActive(true);
         }
     }
 

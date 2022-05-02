@@ -1329,7 +1329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1191c971d4647f9478f070e131b41a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win: {fileID: 451066599}
+  lose: {fileID: 451066599}
 --- !u!1 &784793320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,7 +2182,6 @@ GameObject:
   - component: {fileID: 1338356212}
   - component: {fileID: 1338356214}
   - component: {fileID: 1338356213}
-  - component: {fileID: 1338356216}
   - component: {fileID: 1338356215}
   m_Layer: 5
   m_Name: Enemy Health
@@ -2322,19 +2321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ac3a8e5346711428eadc0d446c8d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1338356216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338356211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1191c971d4647f9478f070e131b41a92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  win: {fileID: 0}
+  win: {fileID: 859093114}
 --- !u!1 &1521436426
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,6 +3073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 250bbf9a277173445abdd1f568c8dcf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 704196080}
+  enemy: {fileID: 1338356211}
   playerHp: {fileID: 0}
   enemyHp: {fileID: 0}
   actionList:

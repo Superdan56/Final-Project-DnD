@@ -16,7 +16,7 @@ public class EnemyHealthScript : MonoBehaviour {
     void Update() {
         gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "Enemy: " + Hp;
         if (Hp <= 0) {
-            win.SetActive(false);
+            win.SetActive(true);
         }
     }
 

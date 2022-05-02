@@ -7,7 +7,7 @@ public class ActionTracker : MonoBehaviour {
     public int Actions;
 
     void Start() {
-        Actions = 3; 
+        Actions = 3;
     }
     
     public int GetActions() {
@@ -16,6 +16,11 @@ public class ActionTracker : MonoBehaviour {
 
     public void RemoveOneAction() {
         Actions -= 1;
+        gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "actions: " + Actions;
+    }
+
+    public void RestActions() {
+        Actions = 3;
     }
 
 }

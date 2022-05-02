@@ -373,6 +373,7 @@
 "Assets/Scripts/ChestChoice.cs"
 "Assets/Scripts/ChoiceContinue.cs"
 "Assets/Scripts/ContinueButton.cs"
+"Assets/Scripts/DeckButtonScript.cs"
 "Assets/Scripts/DeckScript.cs"
 "Assets/Scripts/DeleteScript.cs"
 "Assets/Scripts/Draging.cs"

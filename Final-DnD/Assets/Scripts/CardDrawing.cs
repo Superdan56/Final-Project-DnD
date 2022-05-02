@@ -33,7 +33,7 @@ public class CardDrawing : MonoBehaviour {
         }
     }
 
-    void DrawCard() {
+    public void DrawCard() {
         decksize -= 1;
         deckText.GetComponent<TMPro.TextMeshProUGUI>().text = "Deck: " + decksize.ToString();
 

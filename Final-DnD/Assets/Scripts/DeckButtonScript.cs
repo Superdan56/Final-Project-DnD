@@ -17,7 +17,7 @@ public class DeckButtonScript : MonoBehaviour {
 
     public void ButtonClicked() {
         actionNum.RemoveOneAction();
-        draw.DrawCard();
+        draw.ClicktoDraw();
     }
 
 }

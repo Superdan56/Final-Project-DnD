@@ -1717,6 +1717,8 @@ MonoBehaviour:
   hand: {fileID: 969811428}
   cardGen: {fileID: 0}
   dragScript: {fileID: 0}
+  actions: {fileID: 1999768619}
+  actionNum: {fileID: 0}
 --- !u!1 &1150095942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,8 +1754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40.38971, y: 89.04}
-  m_SizeDelta: {x: 1557, y: 742.08}
+  m_AnchoredPosition: {x: 40.38971, y: 114.04}
+  m_SizeDelta: {x: 1557, y: 692.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1150095944
 BoxCollider2D:
@@ -1779,7 +1781,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1557, y: 742}
+  m_Size: {x: 1557, y: 692}
   m_EdgeRadius: 0
 --- !u!114 &1150095945
 MonoBehaviour:

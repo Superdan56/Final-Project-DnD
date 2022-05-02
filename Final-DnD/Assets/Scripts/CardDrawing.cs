@@ -9,7 +9,9 @@ public class CardDrawing : MonoBehaviour {
     public GameObject deckText;
     public GameObject hand;
     public GameObject cardGen;
-    public Draging dragScript; 
+    public Draging dragScript;
+    public GameObject actions;
+    public ActionTracker actionNum;
 
     private int decksize;
     
@@ -21,6 +23,8 @@ public class CardDrawing : MonoBehaviour {
 
         deckscript = deck.GetComponent<DeckScript>();
 
+        actionNum = actions.GetComponent<ActionTracker>();
+
         decksize = deckscript.GetSize();
 
         deckText.GetComponent<TMPro.TextMeshProUGUI>().text = "Deck: " + decksize.ToString();
@@ -29,6 +33,12 @@ public class CardDrawing : MonoBehaviour {
 
     public void DrawHand() {
         for (int i = 0; i < 5; i++) {
+            DrawCard();
+        }
+    }
+
+    public void ClicktoDraw() {
+        if(actionNum.GetActions() > 0) {
             DrawCard();
         }
     }

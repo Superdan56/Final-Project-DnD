@@ -380,6 +380,8 @@
 "Assets/Scripts/EndButtonScript.cs"
 "Assets/Scripts/EndTurnScript.cs"
 "Assets/Scripts/EnemyBehavoir.cs"
+"Assets/Scripts/EnemyHealthScript.cs"
+"Assets/Scripts/HealthScript.cs"
 "Assets/Scripts/NoPlayScript.cs"
 "Assets/Scripts/PlayCard.cs"
 "Assets/Scripts/StartUp.cs"

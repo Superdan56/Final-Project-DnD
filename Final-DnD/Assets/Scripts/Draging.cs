@@ -11,9 +11,6 @@ public class Draging : MonoBehaviour {
     public GameObject actions;
     public ActionTracker actionscript;
 
-    public GameObject NoNoWindow;
-    public NoPlayScript NoNoScript;
-
     private bool isDragging;
     private bool isOverDropZone;
 
@@ -38,14 +35,15 @@ public class Draging : MonoBehaviour {
         actions = GameObject.Find("Actions");
         actionscript = actions.GetComponent<ActionTracker>();
         
-        NoNoWindow = GameObject.Find("Can't Play");
-        NoNoScript = NoNoWindow.GetComponent<NoPlayScript>();
     }
 
     void Update() {
         if (isDragging) {
             transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            transform.SetParent(Canvas.transform, true);
+            
+        }
+        else {
+            startPosition = transform.position;
         }
     }
 
@@ -66,8 +64,7 @@ public class Draging : MonoBehaviour {
     public void EndDrag() {
         isDragging = false;
         if (isOverDropZone) {
-            if(actionscript.GetActions() < 1) {
-                NoNoScript.WindowAppear();
+            if(actionscript.GetActions() <= 0) {
                 transform.position = startPosition;
             }
             else {

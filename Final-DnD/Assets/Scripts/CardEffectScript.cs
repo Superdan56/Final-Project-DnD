@@ -8,19 +8,28 @@ public class CardEffectScript : MonoBehaviour {
     public GameObject hand;
     public GameObject enemy;
 
+    public CardDrawing draw;
+    public HealthScript health;
+    public EnemyHealthScript enemyhealth;
+
     private string cardName;
     
     void Start() {
         cardName = gameObject.name;    
     }
 
-    void ReloadStart() {
+    public void ReloadStart() {
         player = GameObject.Find("Health");
         enemy = GameObject.Find("Enemy Health");
         hand = GameObject.Find("Hand");
+
+        draw = hand.GetComponent<CardDrawing>();
+        health = player.GetComponent<HealthScript>();
+        enemyhealth = enemy.GetComponent<EnemyHealthScript>();
+
     }
 
-    void cardPlayed() {
+    public void cardEffect() {
         if(cardName == "Strike") {
 
         }
@@ -42,24 +51,43 @@ public class CardEffectScript : MonoBehaviour {
         else if(cardName == "Throwing Knifes") {
 
         }
-        else if(cardName == "") {
+        else if(cardName == "Cunning Action") {
 
         }
-        else if(cardName == "") {
+        else if(cardName == "Backstab") {
 
         }
-        else if(cardName == "") {
+        else if(cardName == "Heal") {
 
         }
-        else if(cardName == "") {
+        else if(cardName == "Harm") {
 
         }
-        else if(cardName == "") {
+        else if(cardName == "Commune") {
 
         }
-        else if(cardName == "") {
+        else if(cardName == "Eldritch Blast") {
 
         }
+        else if(cardName == "Drain Life") {
+
+        }
+        else if(cardName == "Dark Bargin") {
+
+        }
+        else if(cardName == "Dark Ritual") {
+
+        }
+        else if(cardName == "Lightning Bolt") {
+
+        }
+        else if(cardName == "Fireball") {
+
+        }
+        else if(cardName == "Divintion") {
+
+        }
+
     }
 
 }

@@ -10,6 +10,7 @@ public class Draging : MonoBehaviour {
     public PlayCard playCard;
     public GameObject actions;
     public ActionTracker actionscript;
+    public CardEffectScript effects;
 
     private bool isDragging;
     private bool isOverDropZone;
@@ -34,6 +35,8 @@ public class Draging : MonoBehaviour {
         
         actions = GameObject.Find("Actions");
         actionscript = actions.GetComponent<ActionTracker>();
+
+        effects = gameObject.GetComponent<CardEffectScript>();
         
     }
 
@@ -69,6 +72,7 @@ public class Draging : MonoBehaviour {
             }
             else {
                 playCard.playcards();
+                effects.cardEffect();
                 gameObject.SetActive(false);
                 actionCount -= 1; 
             }

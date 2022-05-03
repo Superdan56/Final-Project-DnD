@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 330345157234257042}
   - component: {fileID: 9211219145806864171}
   - component: {fileID: 4776672466056668532}
+  - component: {fileID: 8784122392843668222}
   - component: {fileID: 1344311036362753979}
   - component: {fileID: 5611804475466479485}
   m_Layer: 0
@@ -142,6 +143,27 @@ MonoBehaviour:
   playCard: {fileID: 0}
   actions: {fileID: 0}
   actionscript: {fileID: 0}
+  effects: {fileID: 0}
+--- !u!114 &8784122392843668222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735762344565465515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9ccb96117c6d940b84cea1b8f88a82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  hand: {fileID: 0}
+  enemy: {fileID: 0}
+  actions: {fileID: 0}
+  draw: {fileID: 0}
+  health: {fileID: 0}
+  enemyhealth: {fileID: 0}
+  actionNum: {fileID: 0}
 --- !u!50 &1344311036362753979
 Rigidbody2D:
   serializedVersion: 4

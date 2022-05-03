@@ -10,6 +10,7 @@ public class CardDrawing : MonoBehaviour {
     public GameObject hand;
     public GameObject cardGen;
     public Draging dragScript;
+    public CardEffectScript effectScript;
     public GameObject actions;
     public ActionTracker actionNum;
 
@@ -50,7 +51,9 @@ public class CardDrawing : MonoBehaviour {
         cardGen = GameObject.Find(deckscript.GenerateRandomCard());
         GameObject card = Instantiate(cardGen, new Vector2(0,0), Quaternion.identity);
         dragScript = card.GetComponent<Draging>();
+        effectScript = card.GetComponent<CardEffectScript>();
         dragScript.RecallStart();
+        effectScript.ReloadStart();
         card.transform.SetParent(hand.transform, false);
 
     }

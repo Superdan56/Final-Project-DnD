@@ -70,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 74589b6baaa8a8543ab486e60b82384f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -139,6 +139,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Canvas: {fileID: 0}
   DropZone: {fileID: 0}
+  playCard: {fileID: 0}
+  actions: {fileID: 0}
+  actionscript: {fileID: 0}
 --- !u!50 &34337109781637606
 Rigidbody2D:
   serializedVersion: 4

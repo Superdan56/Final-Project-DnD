@@ -369,6 +369,7 @@
 "Assets/Scripts/ActionTracker.cs"
 "Assets/Scripts/CardDisplay.cs"
 "Assets/Scripts/CardDrawing.cs"
+"Assets/Scripts/CardEffectScript.cs"
 "Assets/Scripts/CardObject.cs"
 "Assets/Scripts/ChestChoice.cs"
 "Assets/Scripts/ChoiceContinue.cs"

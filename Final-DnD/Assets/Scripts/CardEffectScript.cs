@@ -14,13 +14,15 @@ public class CardEffectScript : MonoBehaviour {
     public EnemyHealthScript enemyhealth;
     public ActionTracker actionNum;
 
-    private string cardName;
+    string cardName;
+
     
     void Start() {
-        cardName = gameObject.name;    
+          
     }
 
     public void ReloadStart() {
+
         player = GameObject.Find("Health");
         enemy = GameObject.Find("Enemy Health");
         hand = GameObject.Find("Hand");
@@ -33,75 +35,83 @@ public class CardEffectScript : MonoBehaviour {
 
     }
 
+    public void findCardName(string Input) {
+        cardName = Input;
+    }
+
     public void cardEffect() {
-        if(cardName == "Strike") {
+
+        if(cardName.Contains("Strike")) {
             enemyhealth.TakeDamage(5);
         }
-        else if(cardName == "Second Wind") {
+        else if(cardName.Contains("Second Wind")) {
             health.HealDamage(5);
         }
-        else if(cardName == "Action Surge") {
+        else if(cardName.Contains("Action Surge")) {
             actionNum.AddActions(2);
         }
-        else if(cardName == "Twin Strike") {
+        else if(cardName.Contains("Twin Strike")) {
             enemyhealth.TakeDamage(5);
             enemyhealth.TakeDamage(5);
         }
-        else if(cardName == "Preperation") {
+        else if(cardName.Contains("Preperation")) {
             draw.DrawCard();
             draw.DrawCard();
         }
-        else if(cardName == "Ambush") {
+        else if(cardName.Contains("Ambush")) {
             enemyhealth.TakeDamage(1);
             draw.DrawCard();
         }
-        else if(cardName == "Throwing Knifes") {
+        else if(cardName.Contains("Throwing Knifes")) {
             enemyhealth.TakeDamage(2);
             enemyhealth.TakeDamage(2);
         }
-        else if(cardName == "Cunning Action") {
+        else if(cardName.Contains("Cunning Action")) {
             draw.DrawCard();
             draw.DrawCard();
         }
-        else if(cardName == "Backstab") {
+        else if(cardName.Contains("Backstab")) {
             enemyhealth.TakeDamage(10);
         }
-        else if(cardName == "Heal") {
+        else if(cardName.Contains("Heal")) {
             health.HealDamage(5);
         }
-        else if(cardName == "Harm") {
+        else if(cardName.Contains("Harm")) {
             enemyhealth.TakeDamage(5);
         }
-        else if(cardName == "Commune") {
+        else if(cardName.Contains("Commune")) {
             draw.DrawCard();
             draw.DrawCard();
         }
-        else if(cardName == "Eldritch Blast") {
+        else if(cardName.Contains("Eldritch Blast")) {
             enemyhealth.TakeDamage(5);
         }
-        else if(cardName == "Drain Life") {
+        else if(cardName.Contains("Drain Life")) {
            enemyhealth.TakeDamage(2);
            health.HealDamage(2);           
         }
-        else if(cardName == "Dark Bargin") {
+        else if(cardName.Contains("Dark Bargin")) {
             draw.DrawCard();
             draw.DrawCard();
             draw.DrawCard();
             health.TakeDamage(3);
         }
-        else if(cardName == "Dark Ritual") {
+        else if(cardName.Contains("Dark Ritual")) {
             actionNum.AddActions(3);
             health.TakeDamage(3);
         }
-        else if(cardName == "Lightning Bolt") {
+        else if(cardName.Contains("Lightning Bolt")) {
             enemyhealth.TakeDamage(5);
         }
-        else if(cardName == "Fireball") {
+        else if(cardName.Contains("Fireball")) {
             enemyhealth.TakeDamage(5);
         }
-        else if(cardName == "Divintion") {
+        else if(cardName.Contains("Divintion")) {
             draw.DrawCard();
             draw.DrawCard();
+        }
+        else {
+            Debug.Log(cardName);
         }
 
     }

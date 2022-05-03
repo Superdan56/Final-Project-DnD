@@ -54,6 +54,7 @@ public class CardDrawing : MonoBehaviour {
         effectScript = card.GetComponent<CardEffectScript>();
         dragScript.RecallStart();
         effectScript.ReloadStart();
+        effectScript.findCardName(cardGen.ToString());
         card.transform.SetParent(hand.transform, false);
 
     }

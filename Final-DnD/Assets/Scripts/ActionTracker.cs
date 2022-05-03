@@ -19,6 +19,10 @@ public class ActionTracker : MonoBehaviour {
         gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "actions: " + Actions;
     }
 
+    public void AddActions(int input) {
+        Actions += input;
+    }
+
     public void RestActions() {
         Actions = 3;
         gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "actions: " + Actions;
